@@ -1,0 +1,11 @@
+# robots.txt — The Dynasty
+# Narco Empire Alliance
+
+User-agent: *
+Allow: /
+Disallow: /service-worker.js
+
+# Sitemap akan aktif setelah domain produksi ditentukan.
+# Ganti URL di bawah ini dengan domain produksi Anda, lalu sesuaikan juga
+# <loc> di dalam sitemap.xml.
+# Sitemap: https://DOMAIN-ANDA/sitemap.xml

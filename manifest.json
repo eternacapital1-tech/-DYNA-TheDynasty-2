@@ -1,0 +1,32 @@
+{
+  "name": "The Dynasty — Narco Empire Alliance",
+  "short_name": "The Dynasty",
+  "description": "Website resmi aliansi The Dynasty untuk game Narco Empire. Server 32 dan Server 53. Built From Zero. Built Together.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#07060b",
+  "theme_color": "#8b5cf6",
+  "lang": "id",
+  "icons": [
+    {
+      "src": "assets/images/logo/the-dynasty.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/logo/the-dynasty.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/logo/the-dynasty-s32.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
