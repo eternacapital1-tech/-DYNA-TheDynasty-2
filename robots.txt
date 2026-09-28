@@ -5,7 +5,6 @@ User-agent: *
 Allow: /
 Disallow: /service-worker.js
 
-# Sitemap akan aktif setelah domain produksi ditentukan.
-# Ganti URL di bawah ini dengan domain produksi Anda, lalu sesuaikan juga
-# <loc> di dalam sitemap.xml.
-# Sitemap: https://DOMAIN-ANDA/sitemap.xml
+# Sitemap sudah menggunakan URL GitHub Pages The Dynasty.
+# URL sitemap:
+Sitemap: https://eternacapital1-tech.github.io/-DYNA-TheDynasty-2/sitemap.xml
