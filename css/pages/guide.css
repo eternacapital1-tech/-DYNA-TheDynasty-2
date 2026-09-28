@@ -1,0 +1,111 @@
+/* The Dynasty — Guide */
+
+.guide-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding-left: var(--space-8);
+}
+
+.guide-timeline::before {
+  content: "";
+  position: absolute;
+  left: 26px;
+  top: 12px;
+  bottom: 12px;
+  width: 2px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(180deg, var(--color-primary), transparent);
+  opacity: 0.4;
+}
+
+.guide-step {
+  position: relative;
+  display: flex;
+  gap: var(--space-5);
+  padding: var(--space-5) var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, rgba(23, 20, 38, 0.75), rgba(17, 15, 27, 0.92));
+  transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.guide-step:hover {
+  transform: translateX(6px);
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
+}
+
+.guide-step__num {
+  position: absolute;
+  left: calc(-1 * var(--space-8) + 8px);
+  top: var(--space-5);
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg);
+  color: var(--color-primary-light);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  box-shadow: 0 0 18px rgba(139, 92, 246, 0.3);
+  z-index: 1;
+}
+
+.guide-step__body {
+  flex: 1;
+}
+
+.guide-step__title {
+  font-size: var(--fs-md);
+  font-weight: 800;
+  margin-bottom: var(--space-2);
+}
+
+.guide-step__text {
+  color: var(--color-muted);
+  font-size: var(--fs-sm);
+  line-height: 1.8;
+}
+
+.guide-step__text strong {
+  color: var(--color-primary-light);
+}
+
+.guide-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+@media (max-width: 700px) {
+  .guide-timeline {
+    padding-left: var(--space-7);
+  }
+
+  .guide-timeline::before {
+    left: 19px;
+  }
+
+  .guide-step__num {
+    left: calc(-1 * var(--space-7) + 1px);
+    width: 34px;
+    height: 34px;
+    font-size: 0.66rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .guide-step {
+    padding: var(--space-4);
+  }
+
+  .guide-actions .btn {
+    width: 100%;
+  }
+}

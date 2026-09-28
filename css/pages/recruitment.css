@@ -1,0 +1,120 @@
+/* The Dynasty — Recruitment */
+
+.page-hero--recruit .page-hero__title {
+  letter-spacing: 0.01em;
+}
+
+.req-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-5);
+}
+
+.req-tile {
+  position: relative;
+  padding: var(--space-6) var(--space-5);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(ellipse 90% 100% at 50% 0%, rgba(139, 92, 246, 0.16), transparent 70%),
+    linear-gradient(180deg, var(--color-surface-2), var(--color-surface));
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.req-tile:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
+}
+
+.req-tile__label {
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: var(--space-2);
+}
+
+.req-tile__value {
+  font-size: clamp(1.8rem, 4vw, var(--fs-2xl));
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #ffffff, var(--color-accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.req-tile__hint {
+  margin-top: var(--space-2);
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
+}
+
+.approval-box {
+  padding: var(--space-6);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(139, 92, 246, 0.1), rgba(17, 15, 27, 0.9));
+  margin-bottom: var(--space-5);
+}
+
+.approval-box__label {
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-primary-light);
+  margin-bottom: var(--space-3);
+}
+
+.approval-box__text {
+  color: var(--color-text);
+  font-size: var(--fs-md);
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.recruit-server-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6) var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, rgba(23, 20, 38, 0.85), rgba(17, 15, 27, 0.95));
+  transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.recruit-server-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
+}
+
+.recruit-server-card__server {
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.recruit-server-card__name {
+  font-size: var(--fs-lg);
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.recruit-server-card__note {
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
+  line-height: 1.75;
+}
+
+@media (max-width: 560px) {
+  .approval-box {
+    padding: var(--space-5) var(--space-4);
+  }
+}
