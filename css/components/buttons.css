@@ -1,0 +1,122 @@
+/* The Dynasty — Buttons */
+
+.btn {
+  --btn-bg: var(--color-surface-2);
+  --btn-color: var(--color-text);
+  --btn-border: var(--color-border);
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 0.82rem 1.6rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--btn-color);
+  background: var(--btn-bg);
+  border: 1px solid var(--btn-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-base),
+    background var(--transition-base),
+    color var(--transition-base);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.18) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 0.7s cubic-bezier(0.22, 0.72, 0.3, 1);
+}
+
+.btn:hover::before {
+  transform: translateX(120%);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* ---- Variants ---- */
+
+.btn--primary {
+  --btn-bg: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  --btn-color: #ffffff;
+  --btn-border: rgba(167, 139, 250, 0.55);
+  box-shadow: 0 8px 28px rgba(91, 33, 182, 0.4), var(--shadow-glow);
+}
+
+.btn--primary:hover {
+  box-shadow: 0 12px 40px rgba(91, 33, 182, 0.55), var(--shadow-glow-strong);
+  --btn-border: rgba(196, 181, 253, 0.8);
+}
+
+.btn--outline {
+  --btn-bg: transparent;
+  --btn-color: var(--color-primary-light);
+  --btn-border: var(--color-border-strong);
+}
+
+.btn--outline:hover {
+  --btn-bg: rgba(139, 92, 246, 0.12);
+  --btn-color: var(--color-accent);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn--ghost {
+  --btn-bg: rgba(255, 255, 255, 0.03);
+  --btn-color: var(--color-text-soft);
+  --btn-border: var(--color-border-soft);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.btn--ghost:hover {
+  --btn-bg: rgba(139, 92, 246, 0.1);
+  --btn-color: var(--color-text);
+  --btn-border: var(--color-border-strong);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn--discord {
+  --btn-bg: linear-gradient(135deg, #5865f2 0%, #3b45c4 100%);
+  --btn-color: #ffffff;
+  --btn-border: rgba(120, 130, 255, 0.6);
+  box-shadow: 0 8px 28px rgba(88, 101, 242, 0.35);
+}
+
+.btn--discord:hover {
+  box-shadow: 0 12px 40px rgba(88, 101, 242, 0.55);
+  --btn-border: rgba(150, 160, 255, 0.85);
+}
+
+/* ---- Sizes ---- */
+
+.btn--sm {
+  padding: 0.6rem 1.1rem;
+  font-size: 0.7rem;
+}
+
+.btn--lg {
+  padding: 1rem 2rem;
+  font-size: 0.82rem;
+}
+
+.btn--block {
+  width: 100%;
+}

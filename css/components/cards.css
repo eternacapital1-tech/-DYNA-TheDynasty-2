@@ -1,0 +1,167 @@
+/* The Dynasty — Cards */
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6) var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, rgba(23, 20, 38, 0.85), rgba(17, 15, 27, 0.92));
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    transform var(--transition-base),
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 0%,
+    rgba(139, 92, 246, 0.14),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card__title {
+  font-size: var(--fs-md);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--color-text);
+}
+
+.card__text {
+  color: var(--color-muted);
+  font-size: var(--fs-sm);
+  line-height: 1.75;
+}
+
+.card__badge {
+  align-self: flex-start;
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  border-radius: var(--radius-pill);
+  color: var(--color-primary-light);
+  border: 1px solid var(--color-border-strong);
+  background: rgba(139, 92, 246, 0.1);
+}
+
+.card__badge--online {
+  color: var(--color-success);
+  border-color: rgba(52, 211, 153, 0.4);
+  background: rgba(52, 211, 153, 0.1);
+}
+
+.card__icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-strong);
+  background: linear-gradient(145deg, rgba(139, 92, 246, 0.22), rgba(139, 92, 246, 0.04));
+  color: var(--color-primary-light);
+  margin-bottom: var(--space-2);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.card__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.card:hover .card__icon {
+  transform: scale(1.06);
+  box-shadow: var(--shadow-glow);
+}
+
+.card__icon-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: var(--space-2);
+  filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.35));
+}
+
+.card__icon-glyph {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-strong);
+  background: linear-gradient(145deg, rgba(139, 92, 246, 0.22), rgba(139, 92, 246, 0.04));
+  color: var(--color-primary-light);
+  font-size: var(--fs-lg);
+  font-weight: 800;
+  margin-bottom: var(--space-2);
+}
+
+/* ---- Principle Card ---- */
+
+.card--principle {
+  min-height: 220px;
+}
+
+.card--principle .card__title {
+  font-size: var(--fs-base);
+  letter-spacing: 0.1em;
+  color: var(--color-primary-light);
+}
+
+/* ---- Server Mini Card ---- */
+
+.card--server-mini {
+  gap: var(--space-2);
+}
+
+.card--server-mini .card__title {
+  font-size: var(--fs-md);
+  color: var(--color-text);
+}
+
+/* ---- Contact Card ---- */
+
+.card--contact {
+  text-align: left;
+}
+
+.card--contact .btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+/* ---- Expectation Card ---- */
+
+.card--expect {
+  gap: var(--space-4);
+}
+
+.card--expect .card__title {
+  color: var(--color-primary-light);
+  font-size: var(--fs-base);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

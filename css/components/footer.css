@@ -1,0 +1,167 @@
+/* The Dynasty — Footer */
+
+.dynasty-footer {
+  position: relative;
+  margin-top: var(--space-9);
+  border-top: 1px solid var(--color-border);
+  background: linear-gradient(180deg, rgba(17, 15, 27, 0.6), rgba(7, 6, 11, 0.98));
+}
+
+.dynasty-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(760px, 90%);
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  opacity: 0.7;
+}
+
+.dynasty-footer__inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.1fr;
+  gap: var(--space-6);
+  padding-block: var(--space-8) var(--space-6);
+}
+
+.dynasty-footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.dynasty-footer__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.dynasty-footer__logo img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.4));
+}
+
+.dynasty-footer__logo strong {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.dynasty-footer__tagline {
+  color: var(--color-primary-light);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  letter-spacing: 0.06em;
+}
+
+.dynasty-footer__desc {
+  color: var(--color-muted);
+  font-size: var(--fs-sm);
+  line-height: 1.75;
+  max-width: 320px;
+}
+
+.dynasty-footer__title {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: var(--space-4);
+}
+
+.dynasty-footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.dynasty-footer__link {
+  color: var(--color-text-soft);
+  font-size: var(--fs-sm);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+  display: inline-block;
+}
+
+.dynasty-footer__link:hover {
+  color: var(--color-primary-light);
+  transform: translateX(3px);
+}
+
+.dynasty-footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.dynasty-footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  color: var(--color-text-soft);
+  transition: border-color var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
+}
+
+.dynasty-footer__social-link img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.dynasty-footer__social-link:hover {
+  border-color: var(--color-border-strong);
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--color-text);
+}
+
+.dynasty-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-block: var(--space-5);
+  border-top: 1px solid var(--color-border-soft);
+  font-size: var(--fs-xs);
+  color: var(--color-muted);
+}
+
+.dynasty-footer__bottom a {
+  color: var(--color-primary-light);
+}
+
+.dynasty-footer__bottom a:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 900px) {
+  .dynasty-footer__inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+  }
+
+  .dynasty-footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .dynasty-footer__inner {
+    grid-template-columns: minmax(0, 1fr);
+    padding-block: var(--space-7) var(--space-5);
+  }
+
+  .dynasty-footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
