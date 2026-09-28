@@ -1,0 +1,42 @@
+{
+  "name": "The Dynasty",
+  "type": "Alliance",
+  "game": "Narco Empire",
+  "tagline": "Built From Zero. Built Together.",
+  "taglineAlt": "One Dynasty. One Journey. One Goal.",
+  "description": "The Dynasty adalah aliansi yang dibangun dari awal dengan satu tujuan: tumbuh, berkembang, dan menjadi kuat bersama.",
+  "servers": [32, 53],
+  "principles": [
+    {
+      "title": "GROW TOGETHER",
+      "description": "Setiap anggota memiliki kesempatan untuk berkembang. Kita saling membantu agar tidak ada yang tertinggal."
+    },
+    {
+      "title": "FIGHT TOGETHER",
+      "description": "Ketika waktunya berjuang, kita berdiri sebagai satu kesatuan. Kekuatan aliansi berasal dari kerja sama setiap anggota."
+    },
+    {
+      "title": "BUILD TOGETHER",
+      "description": "The Dynasty bukan milik satu orang. Kita membangunnya bersama, dari kecil hingga menjadi besar."
+    },
+    {
+      "title": "STAY ACTIVE",
+      "description": "Aktivitas dan kontribusi setiap anggota menjadi bagian penting dari perkembangan aliansi."
+    }
+  ],
+  "vision": {
+    "lines": [
+      "Hari ini kita mulai dari nol.",
+      "Besok kita tumbuh bersama.",
+      "Suatu hari nanti, kita akan melihat seberapa jauh kita telah membangun The Dynasty."
+    ],
+    "closing": "One Dynasty. One Journey. One Goal.",
+    "signature": "Built From Zero. Built Together."
+  },
+  "links": {
+    "discord": "https://discord.gg/narcoempire",
+    "game": "https://play.google.com/store/apps/details?id=com.spark.sp.gp",
+    "email": "apphubid@gmail.com"
+  },
+  "language": "id"
+}

@@ -1,0 +1,28 @@
+{
+  "headline": "JOIN THE DYNASTY",
+  "subtitle": "Built From Zero. Built Together.",
+  "requirements": {
+    "power": 200000,
+    "buildingLevel": ">5",
+    "approval": "Membutuhkan persetujuan P4/P5."
+  },
+  "behavior": [
+    "Kompak dengan anggota lain.",
+    "Saling membantu antar anggota aliansi.",
+    "Aktif bermain dan aktif di Discord.",
+    "Mau berkembang dan mau belajar.",
+    "Berkontribusi pada aliansi.",
+    "Sering memberikan donasi untuk teknologi aliansi."
+  ],
+  "activity": [
+    "Hadir dan aktif dalam kegiatan aliansi.",
+    "Ikut serta ketika aliansi membutuhkan bantuan.",
+    "Menjaga komunikasi melalui Discord.",
+    "Melaporkan kondisi bila tidak dapat aktif sementara.",
+    "Mendukung perkembangan teknologi aliansi melalui donasi rutin."
+  ],
+  "rules": "Tidak menerima anggota yang memanfaatkan aliansi hanya untuk mencari Power lalu keluar.",
+  "extraInfo": "Sering memberikan donasi untuk teknologi aliansi akan membuat anda memiliki peluang untuk naik ke P3/P4, sesuai kebutuhan dan persetujuan internal.",
+  "servers": [32, 53],
+  "discord": "https://discord.gg/narcoempire"
+}

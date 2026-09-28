@@ -1,0 +1,35 @@
+{
+  "ranks": [
+    {
+      "code": "P5",
+      "name": "Leader",
+      "description": null,
+      "order": 1
+    },
+    {
+      "code": "P4",
+      "name": "Officer",
+      "description": null,
+      "order": 2
+    },
+    {
+      "code": "P3",
+      "name": "Veteran",
+      "description": null,
+      "order": 3
+    },
+    {
+      "code": "P2",
+      "name": "Member",
+      "description": null,
+      "order": 4
+    },
+    {
+      "code": "P1",
+      "name": "Recruit",
+      "description": null,
+      "order": 5
+    }
+  ],
+  "note": "Detail kewenangan dan tugas tiap rank ditentukan secara internal dan belum dipublikasikan."
+}

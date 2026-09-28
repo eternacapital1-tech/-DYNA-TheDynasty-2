@@ -1,0 +1,40 @@
+{
+  "servers": [
+    {
+      "server": 32,
+      "alliance": "[ DYNA ] TheDynasty",
+      "tag": "DYNA",
+      "status": "Maintenance",
+      "level": null,
+      "power": null,
+      "totalMembers": null,
+      "image": "assets/images/servers/server-32.jpg",
+      "ranks": {
+        "P5": null,
+        "P4": null,
+        "P3": null,
+        "P2": null,
+        "P1": null
+      },
+      "note": "Server 32 sedang dalam status Maintenance. Data rank dan power akan diperbarui setelah server kembali normal."
+    },
+    {
+      "server": 53,
+      "alliance": "[ DYNA ] TheDynasty2",
+      "tag": "DYNA",
+      "status": "Active",
+      "level": 4,
+      "power": 80400000,
+      "totalMembers": 76,
+      "image": "assets/images/servers/server-53.jpg",
+      "ranks": {
+        "P5": "1",
+        "P4": "8/20",
+        "P3": "12/100",
+        "P2": "52/100",
+        "P1": "3/100"
+      },
+      "note": "Total slot terisi 76/76. Aliansi berada pada Level 4."
+    }
+  ]
+}
